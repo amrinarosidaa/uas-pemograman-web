@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4f4; /* Pink pastel lembut untuk latar belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff8e1; /* Cream lembut untuk kalkulator */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #ffe9e9; /* Pink pastel untuk layar */
+    border-radius: 10px;
+    height: 70px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: right;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    background-color: #ffcccc; /* Pink pastel lembut untuk tombol */
+    border: none;
+    border-radius: 10px;
+    height: 65px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    background-color: #ffb3b3; /* Warna hover pink pastel sedikit lebih tua */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    background-color: #ff9999; /* Warna aktif pink pastel lebih gelap */
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#equal {
+    background-color: #ff80b3; /* Pink pastel terang untuk tombol hasil */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#equal:hover {
+    background-color: #ff6699;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#equal:active {
+    background-color: #e55d87;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#clear, #delete, #percent {
+    background-color: #ffd1dc; /* Pink pastel untuk tombol operasi khusus */
+    color: #333333;
+}
+
+#clear:hover, #delete:hover, #percent:hover {
+    background-color: #ffc0cb; /* Sedikit lebih terang saat hover */
+}
+
+#clear:active, #delete:active, #percent:active {
+    background-color: #ff99aa; /* Warna aktif */
+}
+
+#open-parenthesis, #close-parenthesis {
+    background-color: #ffe5d9; /* Warna cream pastel untuk tanda kurung */
+    color: #333333;
+}
+
+#open-parenthesis:hover, #close-parenthesis:hover {
+    background-color: #ffd4c4; /* Warna hover cream pastel */
+}
+
+#open-parenthesis:active, #close-parenthesis:active {
+    background-color: #ffc3b0; /* Warna aktif cream pastel */
+}
+
+
+
